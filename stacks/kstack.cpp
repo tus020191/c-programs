@@ -14,8 +14,8 @@ public:
     {
         
         arr= new X[size];
-        next=new int[size];
-        top=new  int[total_stack];
+        next=new int[size]; // store next free index and previous top position of respective stacks
+        top=new  int[total_stack];  // to store index of top elements of respective stacks
 
 
         for(int i=0;i<size-1;i++)
