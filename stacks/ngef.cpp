@@ -3,13 +3,22 @@
 #include<vector>
 #include<map>
 using namespace std;
+// program to find the next greater frequency element 
+/*    
+   for eg if      arr={12,13,15,12,16,18,16,16,19}
+   then answer will be 
+   {16,12,12,16-1,-1,-1,-1}
+   as after 12 next greater frequency element is 16
+after 13 next greater frequency element is 12 , and so on 
+
+*/
 
 vector <int> ngef(vector<int> v, int n)
 {
     map <int,int> m;
     for(int i=0;i<n;i++)
     {
-        m[v[i]]++;
+        m[v[i]]++; // calculating frequency of each elements
     }
     vector<int> v1(n);
     v1[n-1]=-1;
