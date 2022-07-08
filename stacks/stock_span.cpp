@@ -36,7 +36,7 @@ public:
                 v.push_back(count);
                 continue;
             }
-            while(!st.empty() and st.top()< arr[i])
+            while(!st.empty() and st.top()<= arr[i])
             {
                 st.pop(); 
                 count++;
