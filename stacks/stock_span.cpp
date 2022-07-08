@@ -9,11 +9,12 @@ class stock_span
     X * arr;
     
 public:
+   // constructor 
     stock_span(int n) :n(n)
     {
-        arr=new X[n];
+        arr=new X[n]; // dynnamically creating array
         count =1;
-        cout<<"enter elements \n";
+        cout<<"enter elements \n"; // accepting elements
         for(int i=0;i<n;i++)
         {
             cin>>arr[i];
