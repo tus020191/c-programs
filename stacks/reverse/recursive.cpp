@@ -4,7 +4,7 @@
 #define N 12 
 using namespace std;
 template<class X>
-stack <X> st;
+stack <X> st; // global stack so that change is reflected at every recursion
 template<class X>
  vector< X > v(N);
 template<class X>
